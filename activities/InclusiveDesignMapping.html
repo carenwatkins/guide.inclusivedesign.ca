@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Inclusive Design Mapping | Inclusive Design Guides</title>
+<link rel="icon" type="image/png" href="../images/favico.png">
+
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="../css/foundation.min.css">
+<link rel="stylesheet" href="../css/highlightjs-custom.css">
+<link rel="stylesheet" href="../lib/infusion/src/lib/jquery/ui/css/default-theme/jquery.ui.theme.css">
+
+<link rel="stylesheet" type="text/css" href="../lib/infusion/src/framework/preferences/css/Enactors.css" />
+<link rel="stylesheet" type="text/css" href="../lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+<link rel="stylesheet" type="text/css" href="../lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+<link rel="stylesheet" href="../css/idg.css">
+
+<script type="text/javascript" src="../lib/infusion/infusion-uio.js"></script>
+<script type="text/javascript" src="../js/DocsCore.js"></script>
+<script type="text/javascript" src="../lib/jqueryui/jquery-ui.min.js"></script>
+
+    </head>
+    <body class="docs-template docs-core-sidebar-expanded idg idg-category-Activities">
+
+        <div class="container docs-template-container">
+
+            <!-- Skip Link -->
+<nav id="skip" class="fl-inverted-color">
+    <a href="#topics" class="docs-template-skip-topics">Skip to Topics</a>
+    <a href="#content" class="docs-template-skip-content">Skip to Content</a>
+</nav>
+<!-- END skip link -->
+
+<header class="ignore-for-TOC row fl-inverted-color">
+    <!-- BEGIN markup for Preference Editor -->
+    <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+        <!-- This is the div that will contain the Preference Editor component -->
+        <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+        <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+        <div class="fl-panelBar">
+            <span class="fl-prefsEditor-buttons">
+                <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+            </span>
+        </div>
+    </div>
+    <!-- END markup for Preference Editor -->
+
+    <div class="small-12 column docs-template-header">
+        <a class="" href="../index.html" title="Home: Documentation Template">
+            <span class="idg-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.387 77.161"><title>IDRC Logo</title><g fill="#00A0CC"><path d="M21.701 12.809c6.365 10.428 14.345 23.502 19.237 34.619 2.625-3.069 6.783-7.631 10.449-11.338V10.161H20.086l1.615 2.648z"/><path d="M42.243 50.534c1.541 3.866 2.62 7.419 3.018 10.443.454 3.457-.195 6.477-1.783 8.285-.965 1.102-2.21 1.684-3.598 1.684-1.236 0-2.506-.635-3.576-1.787-1.674-1.803-2.512-4.474-2.3-7.328.364-4.902 2.73-9.046 4.806-11.798-4.7-11.134-13.068-24.844-19.67-35.661-.885-1.45-1.746-2.86-2.565-4.211H1.387v65h50V40.393c-3.537 3.694-7.154 7.734-9.144 10.141z"/><path d="M38.501 67.117c.568.612 1.097.829 1.378.829.514 0 .952-.217 1.344-.662.986-1.125 1.395-3.393 1.062-5.916-.307-2.34-1.064-5.046-2.152-7.997-1.489 2.304-2.887 5.306-3.138 8.682-.148 1.996.416 3.889 1.506 5.064z"/><circle cx="56.887" cy="35.659" r="2.5"/><path d="M19.387 4.16a3.004 3.004 0 0 1-3.001 3.001 3 3 0 1 1 3.001-3.001z"/></g></svg>
+</span>
+            <h1>The Inclusive Design Guide</h1>
+        </a>
+
+        
+        <nav class="right show-for-small-only docs-template-nav-mobile">
+            <ul id="menu">
+                <li class="docs-template-dropDown-header"><span class="docs-template-nav-mobile-icon"></span>
+                    <ul class="docs-template-dropDown">
+                        
+                        
+                            
+                                <li class="idg-navInsights"><a href="/insights/DiverseParticipationAndPerspectives.html" title="Insights">Insights</a></li>
+                            
+                        
+                            
+                                <li class="idg-navPractices"><a href="/practices/Collaborate.html" title="Practices">Practices</a></li>
+                            
+                        
+                            
+                                <li class="idg-navTools"><a href="/tools/UXWalkthroughs.html" title="Tools">Tools</a></li>
+                            
+                        
+                            
+                                <li class="idg-navActivities docs-template-category-active">
+                                    <span aria-label="Currently on Category: Activities">Activities</span>
+                                </li>
+                            
+                        
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <div class="docs-template-header">
+        <nav class="idg-tabs small-12 column show-for-medium-up">
+            <ul class="inline-list">
+            
+            
+                
+                    <li class="idg-navInsights"><a href="/insights/DiverseParticipationAndPerspectives.html" title="Insights"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.503 1.458 19.995 20.014"><title>Insights</title><path d="M17.942 11.517a8.44 8.44 0 0 1-8.441 8.441 8.44 8.44 0 0 1-8.441-8.441c0-4.675 3.779-8.455 8.441-8.455 4.662 0 8.441 3.779 8.441 8.455"/></svg>
+Insights</a></li>
+                
+            
+                
+                    <li class="idg-navPractices"><a href="/practices/Collaborate.html" title="Practices"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Practices</title><path d="M10 .499l9.504 9.5-9.5 9.504-9.504-9.5z"/></svg>
+Practices</a></li>
+                
+            
+                
+                    <li class="idg-navTools"><a href="/tools/UXWalkthroughs.html" title="Tools"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.55 1.438 20 20"><title>Tools</title><path d="M2.192 4.281h14.52v14.526H2.192z"/></svg>
+Tools</a></li>
+                
+            
+                
+                    <li class="idg-navActivities docs-template-category-active"><span aria-label="Currently on Category: Activities"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Activities</title><path d="M9.936 19.5L1.74 14.691l.069-9.499L10.066.5l8.194 4.809-.067 9.499z"/></svg>
+Activities</span></li>
+                
+            
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+            <div class="docs-corec-sidebar-bar ignore-for-TOC docs-template-topics-container small-8 medium-3 column">
+    <nav id="topics" class="docs-template-topics" tabindex="-1">
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+                <h2 class="docs-template-category">Activities</h2>
+                
+                    <h3 class="docs-template-sectionName"></h3>
+                    <ul>
+                        
+                            <li>
+                                
+                                    <a href="MatchingGame.html">Matching Game</a>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <span aria-label="Currently on: Inclusive Design Mapping" class="docs-template-topics-active">Inclusive Design Mapping</span>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <a href="CauseAndEffect.html">Cause and Effect</a>
+                                
+                            </li>
+                        
+                    </ul>
+                
+            
+        
+    </nav>
+</div>
+
+
+            <div class="docs-template-articleBody small-12 medium-8 column">
+
+                <div class="small-4 medium-1 column docs-template-topics-hideShow fl-inverted-color">
+                    <a href="#" class="docs-corec-sidebar-toggle">Topics</a>
+                </div>
+
+                <article id="content">
+                    <h1>Inclusive Design Mapping</h1>
+
+                    <div class="flc-toc-tocContainer docs-template-uio-toc"> </div>
+
+                    <div class="docs-template-articleContent">
+                        <p>This activity breaks down the <a href="/tools/UserStatesAndContexts.html">User States and Contexts Tool</a> into modular pieces (the individual wedges, or &quot;facets&quot;) and actionable steps. It is also a re-thinking of the original tool.</p>
+<p>Here, <strong>user states are reframed as functional requirements of a product or service</strong>. Deficit language or disability classifications that are functionally ambiguous are avoided.</p>
+<p>Needs that are commonly met are placed in the middle, and needs that are not well met are placed toward the edge. This demonstrates that the needs of users &quot;on the edge&quot; are greater in number, as well as the phenomena that by meeting edge needs, you also meet the mainstream needs of the middle.</p>
+<p>In this activity, the states and contexts facets can be swapped in and out depending on the context and the design challenge. Facets can also be broken down into more specific considerations. For example, the facet of cognitive access might include memory, focus and other considerations.</p>
+<p>This activity is intended to be used in the context of co-design where a diverse set of co-designers, including people who presently have difficulty using the design, are active participants in the design process. Co-designers are able to create their own facets if they can&#39;t find a desired state or context within the provided set.</p>
+<ul>
+<li>The exercise is about <strong>stretching and reaching</strong>: to include people who are currently at the edges and who are therefore usually excluded from the design process.</li>
+<li>It is also about <strong>balance and flexibility</strong>: creating a design that does not compromise the experience of one person to make room for the requirements of another.</li>
+</ul>
+<h2 id="step-1">Step 1</h2>
+<p>Choose the facets that are relevant to the needs, preferences and the context you are designing for or critiquing.</p>
+<figure>
+<a href="/images/InclusiveDesignMappingTool01.png"><img src="/images/InclusiveDesignMappingTool01.png" alt="A diagram showing individual facets of the Inclusive Design Mapping Tool"></a>
+<figcaption>
+<em>Figure 1:</em> Inclusive Design Mapping Tool - Choosing the Facets
+</figcaption>
+</figure>
+
+<h2 id="step-2">Step 2</h2>
+<p>First, map your needs, preferences and context on the selected facets. Next, using a different color, map the product/task/solution you are trying to critique or design.</p>
+<figure>
+<a href="/images/InclusiveDesignMappingTool02.png"><img src="/images/InclusiveDesignMappingTool02.png" alt="A diagram showing individual facets with &quot;yourself&quot; and &quot;product&quot; mapped"></a>
+<figcaption>
+<em>Figure 2:</em> Inclusive Design Mapping Tool - Mapping onto the Facets
+</figcaption>
+</figure>
+
+<h2 id="step-3">Step 3</h2>
+<p>Now you can put the facets together, draw a jagged outline, and color in the gap between the two outlines.</p>
+<figure>
+<a href="/images/InclusiveDesignMappingTool03.png"><img src="/images/InclusiveDesignMappingTool03.png" alt="A diagram showing facets pieced together into a circle, with mappings"></a>
+<figcaption>
+<em>Figure 3:</em> Inclusive Design Mapping Tool - Mapping the Current State
+</figcaption>
+</figure>
+<figure>
+<a href="/images/InclusiveDesignMappingTool04.png"><img src="/images/InclusiveDesignMappingTool04.png" alt="A diagram showing the gap between self and product maps"></a>
+<figcaption>
+<em>Figure 4:</em> Inclusive Design Mapping Tool - Finding the Gap
+</figcaption>
+</figure>
+
+<h2 id="step-4">Step 4</h2>
+<p>Once you have a proposed new design, redo the map, with the goal of fully encompassing the jagged outline of the edge users. While iterating through the design process, the mapping can be very useful for identifying where your design does not stretch enough to meet the needs of edge users.</p>
+<figure>
+<a href="/images/InclusiveDesignMappingTool05.png"><img src="/images/InclusiveDesignMappingTool05.png" alt="A diagram showing a new mapping with a positive gap"></a>
+<figcaption>
+<em>Figure 5:</em> Inclusive Design Mapping Tool - Proposing the Desired State
+</figcaption>
+</figure>
+
+<h2 id="how">How</h2>
+<ul class="idg-articleContentUseWhyHow"><li><span role="presentation" class="idg-iconTools"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.55 1.438 20 20"><title>Tools</title><path d="M2.192 4.281h14.52v14.526H2.192z"/></svg>
+</span> <a href="/tools/UserStatesAndContexts.html">User States and Contexts</a></li></ul>
+
+<h2 id="why">Why</h2>
+<ul class="idg-articleContentUseWhyHow"><li><span role="presentation" class="idg-iconInsights"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.503 1.458 19.995 20.014"><title>Insights</title><path d="M17.942 11.517a8.44 8.44 0 0 1-8.441 8.441 8.44 8.44 0 0 1-8.441-8.441c0-4.675 3.779-8.455 8.441-8.455 4.662 0 8.441 3.779 8.441 8.455"/></svg>
+</span> <a href="/insights/OneSizeFitsOne.html">One-Size-Fits-One</a></li>
+<li><span role="presentation" class="idg-iconInsights"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.503 1.458 19.995 20.014"><title>Insights</title><path d="M17.942 11.517a8.44 8.44 0 0 1-8.441 8.441 8.44 8.44 0 0 1-8.441-8.441c0-4.675 3.779-8.455 8.441-8.455 4.662 0 8.441 3.779 8.441 8.455"/></svg>
+</span> <a href="/insights/DisabilityAsMismatch.html">Disability as Mismatch</a></li>
+<li><span role="presentation" class="idg-iconInsights"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.503 1.458 19.995 20.014"><title>Insights</title><path d="M17.942 11.517a8.44 8.44 0 0 1-8.441 8.441 8.44 8.44 0 0 1-8.441-8.441c0-4.675 3.779-8.455 8.441-8.455 4.662 0 8.441 3.779 8.441 8.455"/></svg>
+</span> <a href="/insights/Interconnectedness.html">Interconnectedness</a></li></ul>
+                    </div>
+
+                    <p class="docs-template-githubLink"><a href="https://github.com/inclusive-design/guide.inclusivedesign.ca/tree/master/src/documents/activities/InclusiveDesignMapping.html.md.handlebars" rel="nofollow" target="_blank" class="link-external">Edit this Page on GitHub</a></p>
+                </article>
+
+            </div>
+
+            <footer class="row docs-template-footer fl-inverted-color">
+    <p>Created by <a href="https://wiki.fluidproject.org/display/fluid/The+Inclusive+Design+Guide" rel="nofollow" target="_blank">community members</a> of the<br/>
+    <a href="http://idrc.ocad.ca/" rel="nofollow" target="_blank">Inclusive Design Research Centre</a> at <a href="http://www.ocadu.ca/" target="_blank">OCAD University</a>.</p>
+    <p>
+        This documentation is licensed under a
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+    </p>
+</footer>
+
+<script type="text/javascript">
+    docsCore.init("../");
+    jQuery( "#menu" ).menu({
+        position: {my: "right top", at: "right bottom"},
+        icons: {submenu:"ui-icon-blank"},
+        // Remove the anchors from the tabindex as they are triggered
+        // via the select event. (see below)
+        create: function (event, ui) {
+            jQuery("#menu .ui-menu-item a").attr("tabindex", -1);
+        },
+        // The jQuery menu doesn't seem to like it when the <a> are
+        // specified as the "item" and are nested under an <li>. There
+        // seems to be styling issues and occassionally an error thrown.
+        // The page transition work around below is used to maintian the semantic structure,
+        // while allowing the menu to behave as normal.
+        select: function( event, ui ) {
+            var location = ui.item.children("a").attr("href");
+            if (location) {
+                window.location.href = location;
+            }
+        }
+    });
+</script>
+
+
+        </div> <!-- end container -->
+
+    </body>
+</html>
